@@ -1,0 +1,40 @@
+{
+  "name": "Alert",
+  "type": "boon",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "macro": "",
+    "identifier": "",
+    "rules": [
+      {
+        "type": "initiativeBonus",
+        "disabled": false,
+        "id": "7RHDkSTj0G8kGg2k",
+        "identifier": "",
+        "label": "",
+        "predicate": {},
+        "priority": 1,
+        "value": "1"
+      }
+    ],
+    "description": "<p>+1 to Initiative.</p>"
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "cleanworld",
+      "system": "nimble",
+      "coreVersion": "12.331",
+      "systemVersion": "0.1.0"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.331",
+    "systemId": "nimble",
+    "systemVersion": "0.1.0",
+    "createdTime": 1741226473748,
+    "modifiedTime": 1741401437211,
+    "lastModifiedBy": "Cks0hmp8lQssldFV"
+  }
+}

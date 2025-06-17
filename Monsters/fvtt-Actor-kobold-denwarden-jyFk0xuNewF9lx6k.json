@@ -1,0 +1,380 @@
+{
+	"name": "Kobold Denwarden",
+	"type": "npc",
+	"folder": null,
+	"img": "icons/svg/mystery-man.svg",
+	"system": {
+		"attributes": {
+			"armor": "medium",
+			"damageResistances": [],
+			"damageVulnerabilities": [],
+			"damageImmunities": [],
+			"hp": {
+				"max": 20,
+				"temp": 0,
+				"value": 20
+			}
+		},
+		"description": "",
+		"details": {
+			"creatureType": "",
+			"isFlunky": false,
+			"level": "1",
+			"sizeCategory": "medium"
+		},
+		"attackSequence": "",
+		"savingThrows": {
+			"strength": {
+				"defaultRollMode": 0,
+				"mod": 0
+			},
+			"dexterity": {
+				"defaultRollMode": 0,
+				"mod": 0
+			},
+			"intelligence": {
+				"defaultRollMode": 0,
+				"mod": 0
+			},
+			"will": {
+				"defaultRollMode": 0,
+				"mod": 0
+			}
+		}
+	},
+	"prototypeToken": {
+		"name": "New Actor",
+		"displayName": 0,
+		"actorLink": false,
+		"appendNumber": false,
+		"prependAdjective": false,
+		"width": 1,
+		"height": 1,
+		"texture": {
+			"src": "icons/svg/mystery-man.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"hexagonalShape": 0,
+		"lockRotation": false,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 0,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"flags": {},
+		"randomImg": false
+	},
+	"items": [
+		{
+			"name": "Nooooo!",
+			"type": "monsterFeature",
+			"_id": "isJgexKVJeuSC9HB",
+			"img": "icons/svg/item-bag.svg",
+			"system": {
+				"macro": "",
+				"identifier": "",
+				"rules": [],
+				"activation": {
+					"acquireTargetsFromTemplate": false,
+					"cost": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"duration": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"effects": [],
+					"showDescription": true,
+					"targets": {
+						"count": 1,
+						"restrictions": ""
+					},
+					"template": {
+						"length": 1,
+						"radius": 1,
+						"shape": "",
+						"width": 1
+					}
+				},
+				"description": "<p><em>When an ally within 2 spaces dies, attack once for free</em></p>",
+				"isAction": false,
+				"isAttack": false
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"ownership": {
+				"default": 0,
+				"KG3cIoBUHdVjc4ZV": 3
+			},
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"coreVersion": "12.331",
+				"systemId": "nimble",
+				"systemVersion": "0.1.0",
+				"createdTime": 1741220939625,
+				"modifiedTime": 1741220957012,
+				"lastModifiedBy": "KG3cIoBUHdVjc4ZV"
+			}
+		},
+		{
+			"name": "Hold!",
+			"type": "monsterFeature",
+			"_id": "ZNl7QoU8kHy23ww4",
+			"img": "icons/svg/item-bag.svg",
+			"system": {
+				"macro": "",
+				"identifier": "",
+				"rules": [],
+				"activation": {
+					"acquireTargetsFromTemplate": false,
+					"cost": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"duration": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"effects": [],
+					"showDescription": true,
+					"targets": {
+						"count": 1,
+						"restrictions": ""
+					},
+					"template": {
+						"length": 1,
+						"radius": 1,
+						"shape": "",
+						"width": 1
+					}
+				},
+				"description": "<p>Adjacent allies gain Medium Armor.</p>",
+				"isAction": false,
+				"isAttack": false
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"ownership": {
+				"default": 0,
+				"KG3cIoBUHdVjc4ZV": 3
+			},
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"coreVersion": "12.331",
+				"systemId": "nimble",
+				"systemVersion": "0.1.0",
+				"createdTime": 1741220960139,
+				"modifiedTime": 1741220993202,
+				"lastModifiedBy": "KG3cIoBUHdVjc4ZV"
+			}
+		},
+		{
+			"name": "Stab (2x)",
+			"type": "monsterFeature",
+			"system": {
+				"isAction": true,
+				"macro": "",
+				"identifier": "",
+				"rules": [],
+				"activation": {
+					"acquireTargetsFromTemplate": false,
+					"cost": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"duration": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"effects": [],
+					"showDescription": true,
+					"targets": {
+						"count": 1,
+						"restrictions": ""
+					},
+					"template": {
+						"length": 1,
+						"radius": 1,
+						"shape": "",
+						"width": 1
+					}
+				},
+				"description": "<p>1d4+2</p>",
+				"isAttack": true
+			},
+			"_id": "IhmC9GqNWbBKM2UN",
+			"img": "icons/svg/item-bag.svg",
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"ownership": {
+				"default": 0,
+				"KG3cIoBUHdVjc4ZV": 3
+			},
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"coreVersion": "12.331",
+				"systemId": "nimble",
+				"systemVersion": "0.1.0",
+				"createdTime": 1741220996079,
+				"modifiedTime": 1741221068548,
+				"lastModifiedBy": "KG3cIoBUHdVjc4ZV"
+			}
+		},
+		{
+			"name": "Sling (2x) (Range 8)",
+			"type": "monsterFeature",
+			"system": {
+				"isAction": true,
+				"macro": "",
+				"identifier": "",
+				"rules": [],
+				"activation": {
+					"acquireTargetsFromTemplate": false,
+					"cost": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"duration": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"effects": [],
+					"showDescription": true,
+					"targets": {
+						"count": 1,
+						"restrictions": ""
+					},
+					"template": {
+						"length": 1,
+						"radius": 1,
+						"shape": "",
+						"width": 1
+					}
+				},
+				"description": "<p>1d4+2</p>",
+				"isAttack": true
+			},
+			"_id": "Ii2ylWIy8RkJA9ST",
+			"img": "icons/svg/item-bag.svg",
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"ownership": {
+				"default": 0,
+				"KG3cIoBUHdVjc4ZV": 3
+			},
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"coreVersion": "12.331",
+				"systemId": "nimble",
+				"systemVersion": "0.1.0",
+				"createdTime": 1741221025315,
+				"modifiedTime": 1741221057386,
+				"lastModifiedBy": "KG3cIoBUHdVjc4ZV"
+			}
+		}
+	],
+	"effects": [],
+	"flags": {
+		"exportSource": {
+			"world": "nimble-data-enry",
+			"system": "nimble",
+			"coreVersion": "12.331",
+			"systemVersion": "0.1.0"
+		}
+	},
+	"_stats": {
+		"coreVersion": "12.331",
+		"systemId": "nimble",
+		"systemVersion": "0.1.0",
+		"createdTime": 1741220904069,
+		"modifiedTime": 1741220935281,
+		"lastModifiedBy": "KG3cIoBUHdVjc4ZV"
+	}
+}

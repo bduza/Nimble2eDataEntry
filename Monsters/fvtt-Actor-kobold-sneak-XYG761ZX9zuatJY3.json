@@ -1,0 +1,380 @@
+{
+	"name": "Kobold Sneak",
+	"type": "npc",
+	"folder": null,
+	"img": "icons/svg/mystery-man.svg",
+	"system": {
+		"attributes": {
+			"armor": "none",
+			"damageResistances": [],
+			"damageVulnerabilities": [],
+			"damageImmunities": [],
+			"hp": {
+				"max": 15,
+				"temp": 0,
+				"value": 15
+			}
+		},
+		"description": "",
+		"details": {
+			"creatureType": "Kobold",
+			"isFlunky": false,
+			"level": "1/2",
+			"sizeCategory": "small"
+		},
+		"attackSequence": "",
+		"savingThrows": {
+			"strength": {
+				"defaultRollMode": 0,
+				"mod": 0
+			},
+			"dexterity": {
+				"defaultRollMode": 0,
+				"mod": 0
+			},
+			"intelligence": {
+				"defaultRollMode": 0,
+				"mod": 0
+			},
+			"will": {
+				"defaultRollMode": 0,
+				"mod": 0
+			}
+		}
+	},
+	"prototypeToken": {
+		"name": "New Actor",
+		"displayName": 0,
+		"actorLink": false,
+		"appendNumber": false,
+		"prependAdjective": false,
+		"width": 1,
+		"height": 1,
+		"texture": {
+			"src": "icons/svg/mystery-man.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"hexagonalShape": 0,
+		"lockRotation": false,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 0,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"flags": {},
+		"randomImg": false
+	},
+	"items": [
+		{
+			"name": "Nooooo!",
+			"type": "monsterFeature",
+			"_id": "59IbXn7FK7h9VENw",
+			"img": "icons/svg/item-bag.svg",
+			"system": {
+				"macro": "",
+				"identifier": "",
+				"rules": [],
+				"activation": {
+					"acquireTargetsFromTemplate": false,
+					"cost": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"duration": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"effects": [],
+					"showDescription": true,
+					"targets": {
+						"count": 1,
+						"restrictions": ""
+					},
+					"template": {
+						"length": 1,
+						"radius": 1,
+						"shape": "",
+						"width": 1
+					}
+				},
+				"description": "<p><span class=\"Apple-converted-space\"><em> </em></span><em>When an ally within 2 spaces dies, attack once for free.</em></p>",
+				"isAction": false,
+				"isAttack": false
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"ownership": {
+				"default": 0,
+				"KG3cIoBUHdVjc4ZV": 3
+			},
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"coreVersion": "12.331",
+				"systemId": "nimble",
+				"systemVersion": "0.1.0",
+				"createdTime": 1741219880174,
+				"modifiedTime": 1741219907009,
+				"lastModifiedBy": "KG3cIoBUHdVjc4ZV"
+			}
+		},
+		{
+			"name": "Stab",
+			"type": "monsterFeature",
+			"system": {
+				"isAction": true,
+				"macro": "",
+				"identifier": "kstab",
+				"rules": [],
+				"activation": {
+					"acquireTargetsFromTemplate": false,
+					"cost": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"duration": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"effects": [],
+					"showDescription": true,
+					"targets": {
+						"count": 1,
+						"restrictions": ""
+					},
+					"template": {
+						"length": 1,
+						"radius": 1,
+						"shape": "",
+						"width": 1
+					}
+				},
+				"description": "<p>1d4+2</p>",
+				"isAttack": true
+			},
+			"_id": "FLbtLu64v6KGblNP",
+			"img": "icons/weapons/daggers/dagger-simple-stone-black.webp",
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"ownership": {
+				"default": 0,
+				"KG3cIoBUHdVjc4ZV": 3
+			},
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"coreVersion": "12.331",
+				"systemId": "nimble",
+				"systemVersion": "0.1.0",
+				"createdTime": 1741219917765,
+				"modifiedTime": 1741220206048,
+				"lastModifiedBy": "KG3cIoBUHdVjc4ZV"
+			}
+		},
+		{
+			"name": "Sling (Range 8)",
+			"type": "monsterFeature",
+			"system": {
+				"isAction": true,
+				"macro": "",
+				"identifier": "ksling",
+				"rules": [],
+				"activation": {
+					"acquireTargetsFromTemplate": false,
+					"cost": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"duration": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"effects": [],
+					"showDescription": true,
+					"targets": {
+						"count": 1,
+						"restrictions": ""
+					},
+					"template": {
+						"length": 1,
+						"radius": 1,
+						"shape": "",
+						"width": 1
+					}
+				},
+				"description": "<p>1d4+2</p>",
+				"isAttack": true
+			},
+			"_id": "TYC3gYmxMxSRa35R",
+			"img": "icons/svg/item-bag.svg",
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"ownership": {
+				"default": 0,
+				"KG3cIoBUHdVjc4ZV": 3
+			},
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"coreVersion": "12.331",
+				"systemId": "nimble",
+				"systemVersion": "0.1.0",
+				"createdTime": 1741220053378,
+				"modifiedTime": 1741220231173,
+				"lastModifiedBy": "KG3cIoBUHdVjc4ZV"
+			}
+		},
+		{
+			"name": "Revenge!",
+			"type": "monsterFeature",
+			"_id": "mDcp2Sz78U7uh7Me",
+			"img": "icons/svg/item-bag.svg",
+			"system": {
+				"macro": "",
+				"identifier": "",
+				"rules": [],
+				"activation": {
+					"acquireTargetsFromTemplate": false,
+					"cost": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"duration": {
+						"details": "",
+						"quantity": 1,
+						"type": "none"
+					},
+					"effects": [],
+					"showDescription": true,
+					"targets": {
+						"count": 1,
+						"restrictions": ""
+					},
+					"template": {
+						"length": 1,
+						"radius": 1,
+						"shape": "",
+						"width": 1
+					}
+				},
+				"description": "<p><em>When an ally dies, you may move up to 6 spaces before using your Nooooo! ability.</em></p>",
+				"isAction": false,
+				"isAttack": false
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"ownership": {
+				"default": 0,
+				"KG3cIoBUHdVjc4ZV": 3
+			},
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"coreVersion": "12.331",
+				"systemId": "nimble",
+				"systemVersion": "0.1.0",
+				"createdTime": 1741220314903,
+				"modifiedTime": 1741220362050,
+				"lastModifiedBy": "KG3cIoBUHdVjc4ZV"
+			}
+		}
+	],
+	"effects": [],
+	"flags": {
+		"exportSource": {
+			"world": "nimble-data-enry",
+			"system": "nimble",
+			"coreVersion": "12.331",
+			"systemVersion": "0.1.0"
+		}
+	},
+	"_stats": {
+		"coreVersion": "12.331",
+		"systemId": "nimble",
+		"systemVersion": "0.1.0",
+		"createdTime": 1741219864045,
+		"modifiedTime": 1741220299185,
+		"lastModifiedBy": "KG3cIoBUHdVjc4ZV"
+	}
+}

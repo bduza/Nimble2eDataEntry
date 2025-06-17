@@ -1,0 +1,95 @@
+{
+  "name": "Shatter",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "macro": "",
+    "identifier": "",
+    "rules": [],
+    "activation": {
+      "acquireTargetsFromTemplate": false,
+      "cost": {
+        "details": "",
+        "quantity": 1,
+        "type": "none",
+        "isReaction": false
+      },
+      "duration": {
+        "details": "",
+        "quantity": 1,
+        "type": "none"
+      },
+      "effects": [
+        {
+          "id": "QMCBJM6ECUr8AWXV",
+          "type": "damage",
+          "damageType": "cold",
+          "formula": "3d6",
+          "parentContext": null,
+          "parentNode": null,
+          "on": {
+            "hit": [
+              {
+                "id": "oBBpnKBwQK1p2UhJ",
+                "type": "damageOutcome",
+                "outcome": "fullDamage",
+                "parentContext": "hit",
+                "parentNode": "QMCBJM6ECUr8AWXV"
+              }
+            ]
+          },
+          "canCrit": true,
+          "canMiss": true
+        }
+      ],
+      "showDescription": true,
+      "targets": {
+        "count": 1,
+        "restrictions": ""
+      },
+      "template": {
+        "length": 1,
+        "radius": 1,
+        "shape": "",
+        "width": 1
+      }
+    },
+    "description": {
+      "baseEffect": "<p> Tier 2, 2 Actions, Single Target</p><p><strong>Range:</strong> 12</p><p><strong>Damage:</strong> 3d6</p><p>If any die rolls the max against a Hampered target, this counts as a crit. </p><p><strong>On crit:</strong> +20 damage</p>",
+      "higherLevelEffect": "<p>Increase the result of ANY die by 1. </p><p>+5 damage on crit.</p>"
+    },
+    "properties": {
+      "range": {
+        "min": 2,
+        "max": 12
+      },
+      "reach": {
+        "min": 1,
+        "max": null
+      },
+      "selected": [
+        "range"
+      ]
+    },
+    "school": "ice",
+    "tier": 2
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.345",
+    "systemId": "nimble",
+    "systemVersion": "0.1.0",
+    "createdTime": 1742040353254,
+    "modifiedTime": 1742040567940,
+    "lastModifiedBy": "MleBgB1sPzQPK44G",
+    "exportSource": {
+      "worldId": "nimbledata",
+      "uuid": "Item.h3Cepkbg7hMvHvie",
+      "coreVersion": "13.345",
+      "systemId": "nimble",
+      "systemVersion": "0.1.0"
+    }
+  }
+}

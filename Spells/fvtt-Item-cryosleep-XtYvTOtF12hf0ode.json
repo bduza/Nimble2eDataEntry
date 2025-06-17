@@ -1,0 +1,101 @@
+{
+  "name": "Cryosleep",
+  "type": "spell",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "macro": "",
+    "identifier": "",
+    "rules": [],
+    "activation": {
+      "acquireTargetsFromTemplate": true,
+      "cost": {
+        "details": "Creatures",
+        "quantity": 2,
+        "type": "action",
+        "isReaction": false
+      },
+      "duration": {
+        "details": "",
+        "quantity": 1,
+        "type": "turn"
+      },
+      "effects": [
+        {
+          "id": "IOCR5PcjZkX2NVQO",
+          "type": "condition",
+          "condition": "dazed",
+          "parentContext": null,
+          "parentNode": null
+        },
+        {
+          "id": "IAzkUCdOu8xrxEhg",
+          "type": "savingThrow",
+          "savingThrowType": "strength",
+          "parentContext": null,
+          "parentNode": null,
+          "saveType": "strength",
+          "on": {
+            "failedSave": [
+              {
+                "id": "z0TPlDkMYI6paV99",
+                "type": "condition",
+                "condition": "blinded",
+                "parentContext": "failedSave",
+                "parentNode": "IAzkUCdOu8xrxEhg"
+              }
+            ]
+          },
+          "sharedRolls": []
+        }
+      ],
+      "showDescription": true,
+      "targets": {
+        "count": 1,
+        "restrictions": ""
+      },
+      "template": {
+        "length": 1,
+        "radius": 1,
+        "shape": "square",
+        "width": 2
+      }
+    },
+    "description": {
+      "baseEffect": "<p>Tier 3, 2 Actions, AoE</p><p><strong>Reach:</strong> 12</p><p>Creatures in a 2×2 area within Reach are Dazed. On a failed STR save, they fall asleep instead, becoming Incapacitated until their next two turns have passed, until damaged, or until an ally uses an action to wake them. </p>",
+      "higherLevelEffect": "<p>+1 area</p><p>+1 turn asleep</p>"
+    },
+    "properties": {
+      "range": {
+        "min": 2,
+        "max": null
+      },
+      "reach": {
+        "min": 1,
+        "max": 12
+      },
+      "selected": [
+        "reach"
+      ]
+    },
+    "school": "ice",
+    "tier": 3
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.345",
+    "systemId": "nimble",
+    "systemVersion": "0.1.0",
+    "createdTime": 1742378006749,
+    "modifiedTime": 1742378336895,
+    "lastModifiedBy": "MleBgB1sPzQPK44G",
+    "exportSource": {
+      "worldId": "nimbledata",
+      "uuid": "Item.XtYvTOtF12hf0ode",
+      "coreVersion": "13.345",
+      "systemId": "nimble",
+      "systemVersion": "0.1.0"
+    }
+  }
+}

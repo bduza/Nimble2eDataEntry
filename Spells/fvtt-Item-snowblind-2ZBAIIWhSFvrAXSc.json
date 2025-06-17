@@ -1,0 +1,102 @@
+{
+  "name": "Snowblind",
+  "type": "spell",
+  "img": "icons/magic/water/snowflake-ice-snow-white.webp",
+  "system": {
+    "macro": "",
+    "identifier": "",
+    "rules": [],
+    "activation": {
+      "acquireTargetsFromTemplate": false,
+      "cost": {
+        "details": "",
+        "quantity": 1,
+        "type": "action",
+        "isReaction": false
+      },
+      "duration": {
+        "details": "",
+        "quantity": 1,
+        "type": "action"
+      },
+      "effects": [
+        {
+          "id": "tcFzt6fJKjsScHrk",
+          "type": "damage",
+          "damageType": "cold",
+          "formula": "1d6",
+          "parentContext": null,
+          "parentNode": null,
+          "canCrit": true,
+          "canMiss": true,
+          "on": {
+            "hit": [
+              {
+                "id": "E0KERlClehskihpg",
+                "type": "condition",
+                "condition": "blinded",
+                "parentContext": "hit",
+                "parentNode": "tcFzt6fJKjsScHrk"
+              },
+              {
+                "id": "2MJMpT5vrBSfLBHs",
+                "type": "damageOutcome",
+                "outcome": "fullDamage",
+                "parentContext": "hit",
+                "parentNode": "tcFzt6fJKjsScHrk"
+              }
+            ]
+          }
+        }
+      ],
+      "showDescription": true,
+      "targets": {
+        "count": 1,
+        "restrictions": ""
+      },
+      "template": {
+        "length": 1,
+        "radius": 1,
+        "shape": "",
+        "width": 1
+      }
+    },
+    "description": {
+      "baseEffect": "<p>1 Action, Single Target</p><p><strong>Reach:</strong> 1</p><p><strong>Damage:</strong> 1d6</p><p><strong>On hit:</strong> Blinded until the end of their next turn.</p>",
+      "higherLevelEffect": "<p>+3 damage every 5 levels.</p>"
+    },
+    "properties": {
+      "range": {
+        "min": 2,
+        "max": null
+      },
+      "reach": {
+        "min": 1,
+        "max": 1
+      },
+      "selected": [
+        "reach"
+      ]
+    },
+    "school": "ice",
+    "tier": 0
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.345",
+    "systemId": "nimble",
+    "systemVersion": "0.1.0",
+    "createdTime": 1742039331933,
+    "modifiedTime": 1742039640406,
+    "lastModifiedBy": "MleBgB1sPzQPK44G",
+    "exportSource": {
+      "worldId": "nimbledata",
+      "uuid": "Item.2ZBAIIWhSFvrAXSc",
+      "coreVersion": "13.345",
+      "systemId": "nimble",
+      "systemVersion": "0.1.0"
+    }
+  }
+}
